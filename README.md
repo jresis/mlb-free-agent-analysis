@@ -27,11 +27,7 @@ In an attempt to improve on the linear regressions, I created a classification m
 ## Takeaways
 Regarding hitters, it is easier to increase their value through their work at the plate as opposed to in the field. In addition, speed-reliant players have relatively limited longevity in the league, so that reservation within the industry, unlike BMI, seems to hold up.
 
-For pitchers, while ERA does a decent job, simply looking at runs allowed (instead of limiting it to earned runs) does a better job.
-Strikeout/walk ratios
-BMI as a non-factor
-Ability to last long in games
+For pitchers, while ERA does a decent job, simply looking at runs allowed (instead of limiting it to earned runs) does a better job. This is due to the noise of the error statistic, which allows pitchers to get off the hook for runs they allow that get excluded by ERA. Also, control is very valuable for pitchers, as evidenced by the importance of strikeout-to-walk ratios. For both hitters and pitchers, BMI proved to be virtually a non-factor
 
 ## Future Work
-Pitching durability
 In the future, I am interested in incorporating Statcast into the analysis. For pitchers, I would like to know how much higher spin rates on breaking balls help pitchers. Also, it would be good to know if players who rely more on different types of pitches are more valuable and/or durable than others. Pitchers are relatively difficult to project due to their higher injury risk, so durability is a key factor there. For hitters, exit velocity and launch angle on batted balls have recently gained much attention within the industry. I would like to know how much fast exit velocities and optimal launch angles increase player value and likelihood of a hit.
