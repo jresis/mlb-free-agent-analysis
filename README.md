@@ -1,12 +1,9 @@
 # MLB Player Projection Analysis
 
 ## Introduction
-Observed statistics from 3173 hitters and 1298 pitchers from 2008-2020.
+For this project, I observed statistics from 3173 hitters and 1298 pitchers from 2008-2020. The data was obtained from Baseball-Reference.com. The main goal is to predict player value, encompassed in a statistic called Wins Above Replacement (WAR). The scale for WAR is approximately as follows for one full season: 2=average, 5=all-star, 8=MVP.
 
-Predicting player value, encompassed in a statistic called Wins Above Replacement (WAR).
-
-WAR scale (one full season): 2=average, 5=all-star, 8=MVP
-
+During the analysis, I seeked to answer the following questions:
 1. Which types of players tend to last longer in the league?
 
 2. Which factors are most influential in WAR calculation?
