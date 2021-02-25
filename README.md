@@ -12,7 +12,7 @@ During the analysis, I seeked to answer the following questions:
 
 
 ## Pre-model EDA
-BMI vs. longevity (max age) and BMI vs. production (WAR after age 30)
+Within the baseball industry, bulkier players, or players with a relatively high BMI, tend to get less valuable contracts when they hit free agency. One goal was to determine if these reservations about how these players would age are valid. So, I observed introductory metrics that provide information regarding the relationships between BMI and longevity (as expressed by the max_age, or the oldest a player was when they were in the league). I did the same for the relationship between BMI and WAR after the age of 30.
 
 ## Linear Regression
 Linear regression notes
