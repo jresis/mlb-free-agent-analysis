@@ -25,11 +25,9 @@ For pitchers, the strikeout-to-walk ratio proved to be an important predictor of
 In an attempt to improve on the linear regressions, I created a classification model. Players with at least 10 career WAR with at least 25% of that coming after the age of 30 were categorized as a 1, while other players were categorized as a 0. I decided on those parameters because if a player has fewer than 7.5 career WAR at age 30, then the player is likely not a viable solution to fill a gap on a team. As for the 25% requirement, if a player accumulated a ton of value before age 30, but they could not add much after age 30, then they most likely did not live up to the size of the contract they were offered.
 
 ## Takeaways
-On-base percentage (OBP) as a metric
-Batting value vs. other areas’ value
-Speed-reliant players’ limited longevity
+Regarding hitters, it is easier to increase their value through their work at the plate as opposed to in the field. In addition, speed-reliant players have relatively limited longevity in the league, so that reservation within the industry, unlike BMI, seems to hold up.
 
-RA vs. ERA
+For pitchers, while ERA does a decent job, simply looking at runs allowed (instead of limiting it to earned runs) does a better job.
 Strikeout/walk ratios
 BMI as a non-factor
 Ability to last long in games
