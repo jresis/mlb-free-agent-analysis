@@ -1,7 +1,7 @@
 # MLB Player Projection Analysis
 
 ## Introduction
-For this project, I observed statistics from 3173 hitters and 1298 pitchers from 2008-2020. The data was obtained from Baseball-Reference.com. The main goal is to predict player value, encompassed in a statistic called Wins Above Replacement (WAR). The scale for WAR is approximately as follows for one full season: 2=average, 5=all-star, 8=MVP.
+For this project, I observed statistics from 3173 hitters and 1298 pitchers from 2008-2020. The data was obtained from Baseball-Reference.com. The main goal is to predict player value, encompassed in a statistic called Wins Above Replacement (WAR).
 
 During the analysis, I seeked to answer the following questions:
 1. Which types of players tend to last longer in the league?
@@ -12,6 +12,11 @@ During the analysis, I seeked to answer the following questions:
 
 
 ## Pre-model EDA
+The scale for WAR is approximately as follows for one full season: 2=average, 5=all-star, 8=MVP.
+
+![Screen Shot 2021-02-28 at 6 16 40 AM](https://user-images.githubusercontent.com/29186496/109416543-e20fca00-798c-11eb-99b6-c3011f6bde20.png)
+
+
 Within the baseball industry, bulkier players, or players with a relatively high BMI, tend to get less valuable contracts when they hit free agency. One goal was to determine if these reservations about how these players would age are valid. So, I observed introductory metrics that provide information regarding the relationships between BMI and longevity (as expressed by the max_age, or the oldest a player was when they were in the league). I did the same for the relationship between BMI and WAR after the age of 30. While there were slightly inverse relationships between BMI and longevity/production after age 30, there was no evidence to suggest that BMI should be a key predictor when trying to determine future value. Therefore, it appears that there should be less emphasis on this in the industry.
 
 ## Linear Regression
@@ -31,7 +36,11 @@ I am most interested in the precision metrics for the random forests. This metri
 ## Takeaways
 Regarding hitters, it is easier to increase their value through their work at the plate as opposed to in the field. In addition, speed-reliant players have relatively limited longevity in the league, so that reservation within the industry, unlike BMI, seems to hold up.
 
-For pitchers, while ERA does a decent job, simply looking at runs allowed (instead of limiting it to earned runs) does a better job. This is due to the noise of the error statistic, which allows pitchers to get off the hook for runs they allow that get excluded by ERA. Also, control is very valuable for pitchers, as evidenced by the importance of strikeout-to-walk ratios. For both hitters and pitchers, BMI proved to be virtually a non-factor.
+For pitchers, while ERA does a decent job, simply looking at runs allowed (instead of limiting it to earned runs) does a better job. This is due to the noise of the error statistic, which allows pitchers to get off the hook for runs they allow that get excluded by ERA. 
+
+![Screen Shot 2021-02-28 at 6 18 35 AM](https://user-images.githubusercontent.com/29186496/109416553-f5229a00-798c-11eb-9a26-eee91b0d17bc.png)
+
+Also, control is very valuable for pitchers, as evidenced by the importance of strikeout-to-walk ratios. For both hitters and pitchers, BMI proved to be virtually a non-factor.
 
 ## Future Work
 In the future, I am interested in incorporating Statcast into the analysis. For pitchers, I would like to know how much higher spin rates on breaking balls help pitchers. Also, it would be good to know if players who rely more on different types of pitches are more valuable and/or durable than others. Pitchers are relatively difficult to project due to their higher injury risk, so durability is a key factor there. For hitters, exit velocity and launch angle on batted balls have recently gained much attention within the industry. I would like to know how much fast exit velocities and optimal launch angles increase player value and likelihood of a hit.
